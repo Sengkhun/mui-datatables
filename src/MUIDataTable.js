@@ -810,6 +810,7 @@ class MUIDataTable extends React.Component {
           this.options.onColumnViewChange(
             this.state.columns[index].name,
             this.state.columns[index].display === 'true' ? 'add' : 'remove',
+            this.state.columns[index].key
           );
         }
       },
