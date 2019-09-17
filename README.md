@@ -182,9 +182,9 @@ The component accepts the following props:
 |**`onSearchChange`**|function||Callback function that triggers when the search text value has changed. `function(searchText: string) => void`
 |**`onSearchOpen`**|function||Callback function that triggers when the searchbox opens. `function() => void`
 |**`onSearchClose`**|function||Callback function that triggers when the searchbox closes. `function() => void`
-|**`onFilterChange`**|function||Callback function that triggers when filters have changed. `function(changedColumn: string, filterList: array) => void`
+|**`onFilterChange`**|function||Callback function that triggers when filters have changed. `function(changedColumn: string, value: string, key: string) => void`
 |**`onColumnSortChange`**|function||Callback function that triggers when a column has been sorted. `function(changedColumn: string, direction: string) => void`
-|**`onColumnViewChange`**|function||Callback function that triggers when a column view has been changed. `function(changedColumn: string, action: string) => void`
+|**`onColumnViewChange`**|function||Callback function that triggers when a column view has been changed. `function(changedColumn: string, action: string, key: string) => void`
 |**`onTableChange`**|function||Callback function that triggers when table state has changed. `function(action: string, tableState: object) => void`
 |**`onTableInit`**|function||Callback function that triggers when table state has been initialized. `function(action: string, tableState: object) => void`
 |**`setRowProps`**|function||Is called for each row and allows to return custom props for this row based on its data. `function(row: array, dataIndex: number) => object`
