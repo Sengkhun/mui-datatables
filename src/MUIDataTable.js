@@ -872,6 +872,7 @@ class MUIDataTable extends React.Component {
           this.options.onColumnSortChange(
             this.state.columns[index].name,
             this.getSortDirection(this.state.columns[index]),
+            this.state.columns[index].key
           );
         }
       },
