@@ -646,6 +646,7 @@ class MUIDataTable extends React.Component {
           columnValue,
           tableMeta,
           this.updateDataCol.bind(null, rowIndex, index),
+          columns[index].key
         );
         columnDisplay = funcResult;
 
