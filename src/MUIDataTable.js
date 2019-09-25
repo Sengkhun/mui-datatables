@@ -646,7 +646,7 @@ class MUIDataTable extends React.Component {
           columnValue,
           tableMeta,
           this.updateDataCol.bind(null, rowIndex, index),
-          columns[index].key
+          columns[index].key,
         );
         columnDisplay = funcResult;
 
@@ -811,7 +811,7 @@ class MUIDataTable extends React.Component {
           this.options.onColumnViewChange(
             this.state.columns[index].name,
             this.state.columns[index].display === 'true' ? 'add' : 'remove',
-            this.state.columns[index].key
+            this.state.columns[index].key,
           );
         }
       },
@@ -873,7 +873,7 @@ class MUIDataTable extends React.Component {
           this.options.onColumnSortChange(
             this.state.columns[index].name,
             this.getSortDirection(this.state.columns[index]),
-            this.state.columns[index].key
+            this.state.columns[index].key,
           );
         }
       },
@@ -990,11 +990,7 @@ class MUIDataTable extends React.Component {
       () => {
         this.setTableAction('filterChange');
         if (this.options.onFilterChange) {
-          this.options.onFilterChange(
-            column, 
-            this.state.filterList[index], 
-            this.state.columns[index].key
-          );
+          this.options.onFilterChange(column, this.state.filterList[index], this.state.columns[index].key);
         }
       },
     );
